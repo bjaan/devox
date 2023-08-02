@@ -1,4 +1,4 @@
-# Introducing DeVoX-Isolate:
+# DeVoX-Isolate
 ## Your Ultimate Audio Tool for Seamless Vocal and Voice-over Removal!
 
 Are you tired of struggling to remove unwanted vocals and voice-overs from your audio files? Do you wish to create instrumental versions of your favorite songs or podcasts effortlessly? Look no further! DeVoX-Isolate is here to revolutionize your audio editing experience.
@@ -34,6 +34,8 @@ You can run the batch file `devox.bat` with just one parameter the input file, e
 
 Or simply drag and drop it on the `devox.bat` file
 
+Once the process is complete the files are available in the `output\htdemucs_ft` in a separate folder, as `no_vocals.wav`. The vocals are saved as `vocals.wav`
+
 # Building
 
 To build DeVoX-Isolate for yourself and your OS. First download this repository.
@@ -52,7 +54,7 @@ Navigate to in the `demucs` sub folder, where you need to run these commands:
 2. enter this virtual environment with `venv\Scripts\activate`, it will now show `(venv) ` in front of the prompt
 3. this will install Python requirements for CUDA support (only Windows and Linux) through pip: `pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116 demucs SoundFile cx-Freeze`, alternative is CPU only `pip3 install torch torchvision torchaudio demucs SoundFile cx-Freeze`
 4. this will build demucs (Windows & Linux): `cxfreeze main.py --target-dir=dist --target-name=demucs-cxfreeze --packages=torch --includes=demucs.htdemucs`
-or without pip3 install torch torchvision torchaudio demucs SoundFile cx-Freeze
+or without `pip3 install torch torchvision torchaudio demucs SoundFile cx-Freeze`
 5. this will exit the virtual environment: `deactivate`
 
 You find the `demucs` software now under `demucs\dist`
