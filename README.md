@@ -1,6 +1,5 @@
-# DeVoX-Isolate - remove vocals and voice-overs from any audio file
-
-Introducing DeVoX-Isolate: Your Ultimate Audio Tool for Seamless Vocal and Voice-over Removal!
+# Introducing DeVoX-Isolate:
+## Your Ultimate Audio Tool for Seamless Vocal and Voice-over Removal!
 
 Are you tired of struggling to remove unwanted vocals and voice-overs from your audio files? Do you wish to create instrumental versions of your favorite songs or podcasts effortlessly? Look no further! DeVoX-Isolate is here to revolutionize your audio editing experience.
 
@@ -21,7 +20,7 @@ As this is a full-beta software, we do not provide a GUI yet, but you can alread
 TODO : 
 *	Batch Processing: Time is of the essence, and DeVoX-Isolate respects that. Our tool supports batch processing, allowing you to remove vocals from multiple audio files simultaneously, significantly reducing editing time.
 
-*	Real-time Preview: Get a sneak peek of the final result before committing to the changes. DeVoX-Isolate provides a real-time preview, empowering you to fine-tune your settings and achieve the perfect audio output.
+*	Real-time Preview: Get a sneak peek of the final result before committing to the changes. DeVoX-Isolate provides a real-time preview, empowering you to select what vocals to cut/amplify/reduce and achieve the perfect audio output.
 
 DeVoX-Isolate is a must-have tool for musicians, content creators, podcasters, and audio enthusiasts alike. Whether you're a professional sound engineer or an aspiring artist, this software caters to all your vocal removal needs.
 
@@ -37,7 +36,7 @@ Or simply drag and drop it on the `devox.bat` file
 
 # Building
 
-To build `devox` for yourself and your OS. First download this repository.
+To build DeVoX-Isolate for yourself and your OS. First download this repository.
 
 ## 0. Install Python
 
