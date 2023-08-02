@@ -1,3 +1,44 @@
+# DeVoX-Isolate - remove vocals and voice-overs from any audio file
+
+Introducing DeVoX-Isolate: Your Ultimate Audio Tool for Seamless Vocal and Voice-over Removal!
+
+Are you tired of struggling to remove unwanted vocals and voice-overs from your audio files? Do you wish to create instrumental versions of your favorite songs or podcasts effortlessly? Look no further! DeVoX-Isolate is here to revolutionize your audio editing experience.
+
+DeVoX-Isolate is a cutting-edge software designed to remove vocals and voice-overs from any audio file with unparalleled precision and ease. Developed by a team of audio experts and powered by advanced AI algorithms, this tool offers an innovative and efficient way to achieve professional-grade audio manipulation.
+
+Key Features:
+
+*    Seamless Vocal Removal: DeVoX-Isolate utilizes sophisticated deep learning technology to detect and isolate vocals and voice-overs from your audio tracks. By extracting vocals from background music, podcasts, or recordings, you can effortlessly obtain pristine instrumental versions for remixes or karaoke performances.
+
+*    High-Fidelity Output: We understand the importance of preserving audio quality. With DeVoX-Isolate, you can rest assured that your audio will retain its original brilliance, even after removing the vocals. Our tool ensures minimal loss of audio quality during the process.
+
+*    User-Friendly Interface: DeVoX-Isolate boasts a user-friendly interface that enables both novices and professionals to work with ease. Simply drag-and-drop your audio file on our application and the screen shows you status updates.
+
+*    Multiple File Format Support: Whether it's MP3, WAV, FLAC, or any other popular audio format, DeVoX-Isolate accommodates a wide range of file types. This flexibility ensures that you can work with your preferred audio files without any hassle.
+
+As this is a full-beta software, we do not provide a GUI yet, but you can already use our core functionality.
+
+TODO : 
+*	Batch Processing: Time is of the essence, and DeVoX-Isolate respects that. Our tool supports batch processing, allowing you to remove vocals from multiple audio files simultaneously, significantly reducing editing time.
+
+*	Real-time Preview: Get a sneak peek of the final result before committing to the changes. DeVoX-Isolate provides a real-time preview, empowering you to fine-tune your settings and achieve the perfect audio output.
+
+DeVoX-Isolate is a must-have tool for musicians, content creators, podcasters, and audio enthusiasts alike. Whether you're a professional sound engineer or an aspiring artist, this software caters to all your vocal removal needs.
+
+Join the revolution of audio editing with DeVoX-Isolate and unlock a world of possibilities. Experience the power and convenience of this remarkable tool today!
+
+# Usage
+
+When you're on Windows you can download and use our release directly.
+
+You can run the batch file `devox.bat` with just one parameter the input file, e.g. an mp3.
+
+Or simply drag and drop it on the `devox.bat` file
+
+# Building
+
+To build `devox` for yourself and your OS. First download this repository.
+
 ## 0. Install Python
 
 We need Python 3.10 at least installed (it was tested with this version to say the least).
@@ -29,9 +70,10 @@ You can now remove the contents of the `demucs\venv` folder as it is no longer n
 First download the `ffmpeg` and `ffprobe` executables, e.g.:
 
 Windows: https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip
+
 MacOS: https://evermeet.cx/ffmpeg/ffmpeg-109428-g10a56363a7.zip and https://evermeet.cx/ffmpeg/ffprobe-109428-g10a56363a7.zip
 
-Then copy them to `demuncs\dist`
+Then copy them to the `demucs\dist` folder
 
 ## 4. Download models
 
@@ -51,7 +93,8 @@ and place them in the `models\htdemucs_ft` folder
 
 Note: List of all filenames (in case you need a model other than htdemucs_ft) https://raw.githubusercontent.com/facebookresearch/demucs/main/demucs/remote/files.txt
 
-demucs-cxfreeze.exe -n htdemucs_ft --repo ..\..\models\htdemucs_ft
+## 5. Build Release
 
+Run `build-release.bat` to copy all the required files to the `dist` folder
 
-demucs-cxfreeze.exe -n htdemucs_ft --repos ..\..\models\htdemucs_ft -o ..\..\output --two-stems vocal INPUTFILE
+`devox.bat` is now available
