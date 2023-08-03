@@ -17,7 +17,9 @@ Key Features:
 
 As this is a full-beta software, we do not provide a GUI yet, but you can already use our core functionality.
 
-TODO : 
+TODO :
+*   De-ducking: Some audio mixes automatically reduce the audio level of other tracks when a vocal is present to put in the foreground, this results in a reduced level when the audio is removed by our process, we should automatically compensate for that
+
 *	Batch Processing: Time is of the essence, and DeVoX-Isolate respects that. Our tool supports batch processing, allowing you to remove vocals from multiple audio files simultaneously, significantly reducing editing time.
 
 *	Real-time Preview: Get a sneak peek of the final result before committing to the changes. DeVoX-Isolate provides a real-time preview, empowering you to select what vocals to cut/amplify/reduce and achieve the perfect audio output.
